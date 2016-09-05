@@ -1,0 +1,55 @@
+{
+    "name": "js-kindaobserve",
+    "version": "0.0.0",
+    "description": "Kind of, sort of observe...",
+    "scripts": {
+
+        "docs": "jsdoc -r -c jsdoc.json; gulp docs",
+        "test": "karma start",
+        "postinstall": "bower install",
+        "start": "gulp start",
+        "build": "gulp build"
+    },
+    "repository": {
+
+        "type": "git",
+        "url": "git+https://github.com/cdcabrera/js-kindaobserve.git"
+    },
+    "keywords": [],
+    "author": "CD Cabrera <cabrera.code@gmail.com>",
+    "license": "MIT",
+    "engines" : {
+
+        "node" : ">=4.1.2"
+    },
+    "devDependencies": {
+
+        "bower": "^1.7.9",
+
+        "browser-sync": "^2.11.1",
+
+        "del": "~2.2.0",
+        "gulp": "~3.9.1",
+        "gulp-less": "~3.0.5",
+        "gulp-concat": "^2.6.0",
+        "gulp-jshint": "^2.0.0",
+        "gulp-jsonlint": "^1.1.2",
+        "gulp-wrap": "^0.11.0",
+        "gulp-insert": "^0.5.0",
+
+        "mocha": "^2.5.3",
+        "karma": "^0.13.22",
+        "karma-cli": "^0.1.2",
+        "karma-mocha": "^1.0.1",
+        "karma-chrome-launcher": "^0.2.2",
+        "karma-firefox-launcher": "^0.1.7",
+        "karma-phantomjs-launcher": "^0.2.3",
+        "karma-ng-html2js-preprocessor": "^0.2.0",
+        "karma-ng-json2js-preprocessor": "^1.1.1",
+
+        "phantomjs": "^1.9.19",
+
+        "minami": "^1.1.1",
+        "jsdoc": "^3.4.0"
+    }
+}

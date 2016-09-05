@@ -1,0 +1,28 @@
+{
+    "name": "js-kindaobserve",
+    "version": "0.0.0",
+    "authors": [],
+    "license": "MIT",
+    "description": "Kind of, sort of observe...",
+    "main": [
+
+        "dist/kobserve.js"
+    ],
+    "moduleType": [],
+    "ignore": [
+
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+
+
+    },
+    "devDependencies": {
+
+
+    }
+}
