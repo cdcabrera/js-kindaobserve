@@ -1,12 +1,13 @@
 
 
-    var packageJson     = require('./package.json'),
-        bowerJson       = require('./bower.json'),
-        browserSync     = require('browser-sync'),
-        gulp            = require('gulp'),
-        jshint          = require('gulp-jshint');
+    const packageJson     = require('./package.json'),
+          bowerJson       = require('./bower.json'),
+          browserSync     = require('browser-sync'),
+          gulp            = require('gulp'),
+          jshint          = require('gulp-jshint');
 
-    var settings = {
+
+    const settings = {
 
         version:        (packageJson.version || ''),
         date:           new Date().toDateString(),
@@ -28,19 +29,19 @@
     /**
      * JSHint JS files
      */
-    gulp.task('js-hint', function () {
+    gulp.task('js-hint', () =>
 
         gulp.src(settings.jsMatch)
             .pipe(jshint())
             .pipe(jshint.reporter('default'))
-            .pipe(browserSync.reload({ stream: true }));
-    });
+            .pipe(browserSync.reload({ stream: true }))
+    );
 
 
     /**
      * Serve up app directory and watch for file updates
      */
-    gulp.task('start', function () {
+    gulp.task('start', () => {
 
         browserSync({
             server: {
@@ -62,9 +63,9 @@
     /**
      * Generate documentation
      */
-    gulp.task('docs',function() {
+    gulp.task('docs', () => {
 
-        var docs = browserSync({
+        let docs = browserSync({
             server:{
                 baseDir:settings.distDocs,
                 index:'index.html'
